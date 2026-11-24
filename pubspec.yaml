@@ -1,0 +1,28 @@
+name: flutter_static_ui_demo
+description: A beginner-friendly two-screen static Flutter UI demo.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  material_ui: ^1.11.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/learning_landscape.png
+  fonts:
+    - family: DemoSans
+      fonts:
+        - asset: assets/fonts/segoeui.ttf
+        - asset: assets/fonts/segoeuib.ttf
+          weight: 700
