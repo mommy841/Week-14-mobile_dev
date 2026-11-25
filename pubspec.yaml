@@ -1,5 +1,5 @@
 name: flutter_static_ui_demo
-description: A beginner-friendly two-screen static Flutter UI demo.
+description: A beginner-friendly local Flutter social feed demo.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -19,7 +19,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/learning_landscape.png
+    - assets/images/
   fonts:
     - family: DemoSans
       fonts:

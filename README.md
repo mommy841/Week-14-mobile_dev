@@ -1,32 +1,24 @@
-# Boring App — Flutter static UI demo
+# Boring App — Flutter demo
 
-A beginner-friendly Flutter project with exactly two screens:
+This phone-friendly Flutter demo includes:
 
-1. Login — a simple static sign-in page with the recreated pixel logo.
-2. Feed — a phone-sized social page with stories, sample posts, and a bottom icon bar.
+- Sign in, create account, and local password reset screens
+- A feed with example posts, search, and profile pages
+- Text-only posts or photo posts; Android photo posts appear in the feed and profile
+- The pixel-style Boring App mark, theme colors, and bundled font
 
-The Log in button only navigates to the feed. The fields and social sign-in labels are visual placeholders; there is no authentication, data storage, or other app behavior.
+Account details and new posts are kept in memory for the current app session. There is no server, real authentication, or password-reset email. A built-in demo account is ready to use:
 
-## Topics demonstrated
+- Email: `demo@boring.app`
+- Password: `boring123`
 
-Static Flutter widgets with `Scaffold`, `Container`, `Text`, and buttons
-`Row`, `Column`, sizing, and spacing
-`Stack` and `Positioned` for the logo and sample architecture image
-Organized image and font assets, displayed with `Image.asset`
-A bundled Segoe UI font registered in `pubspec.yaml`
-Shared colors and typography through `ThemeData`
+## Run on Android
 
-## Run
-
-From this folder, install the project packages and start the app on a connected
-device or emulator:
+Start an Android emulator or connect an Android phone with USB debugging enabled. In this folder, run:
 
 ```sh
-flutter run -d web-server 
+flutter pub get
+flutter run
+```
 
-
-For Android, start an emulator from Android Studio's Device Manager or connect
-an Android phone with USB debugging enabled, then run `flutter run`. To see
-available devices, run `flutter devices`.
-
-To open the web version, run `flutter run -d chrome`.
+The photo picker is connected to Android's system photo chooser. The web build can display the feed, but photo picking is available in the Android app.
